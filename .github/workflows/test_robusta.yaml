@@ -4,7 +4,7 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
     run_tests:
-      runs-on: nscloud-ubuntu-22.04-amd64-4x16
+      runs-on: nscloud
       steps:
         - uses: actions/checkout@v2
         - name: Set up Python
