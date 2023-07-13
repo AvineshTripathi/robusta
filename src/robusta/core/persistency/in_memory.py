@@ -16,5 +16,5 @@ def get_persistent_data(name: str, cls: Type[T]) -> ContextManager[T]:
         data = persistent_data.get(name, cls())
         yield data
     finally:
-        # write data back
+        # write data back <attempt>
         persistent_data[name] = data
