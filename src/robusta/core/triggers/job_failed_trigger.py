@@ -7,7 +7,7 @@ from robusta.integrations.kubernetes.base_triggers import K8sTriggerEvent
 
 class JobFailedTrigger(JobUpdateTrigger):
     """
-    Will fire when the job becomes failed.
+    Will fire when the job becomes failed. <attempt>
     """
 
     def __init__(
